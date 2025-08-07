@@ -36,3 +36,16 @@
     <% end %>
   <% end %>
 </td>
+<td>
+  <div data-show-target="item" class="visibility-hidden">
+    <%= button_to({ action: 'show', id: model.id }, aria: { label: t('.show.title') }, class: 'button is-small is-borderless') do %>
+      <%= svg_tag 'circle-info', class: 'icon text-info' %>
+    <% end %>
+    <%= button_to({ action: 'edit', id: model.id }, aria: { label: t('.edit.title') }, class: 'button is-small is-borderless') do %>
+      <%= svg_tag 'pencil', class: 'icon text-link' %>
+    <% end %>
+    <%= button_to({ action: 'restore', id: model.id }, aria: { label: t('.restore.title') }, form: { data: { turbo_confirm: t('.restore.confirm') } }, class: 'button is-small is-borderless') do %>
+      <i class="fa-solid fa-window-restore text-danger"></i>
+    <% end %>
+  </div>
+</td>
