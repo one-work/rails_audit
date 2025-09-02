@@ -13,7 +13,7 @@
     <span class="family-monospace text-right text-grey" style="display: inline-block;width: <%= max_width + 1 %>ch"><%= key %>:</span>
     <% if value.is_a?(Array) %>
       <span><%= value[0] %></span>
-      <i class="fa-solid fa-arrow-right"></i>
+      <%= svg_tag 'arrow-right' %>
       <span><%= value[1] %></span>
     <% else %>
       <span><%= value %></span>
@@ -29,7 +29,7 @@
       <div>
         <span><%= k %></span>
         <span><%= v[0] %></span>
-        <i class="fa-solid fa-arrow-right"></i>
+        <%= svg_tag 'arrow-right' %>
         <span><%= v[1] %></span>
       </div>
       <% end %>
