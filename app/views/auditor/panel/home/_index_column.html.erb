@@ -1,5 +1,5 @@
 <div class="grid">
-  <%= link_to({ controller: 'auditor/panel/audits' }, data: { turbo_frame: 'body', action: 'menu-popup#enter' }, class: active_helper(controllers: ['audits'], item: 'cell button is-fullwidth', active: 'cell button is-fullwidth is-active')) do %>
+  <%= link_to({ controller: 'auditor/panel/audits' }, data: { turbo_frame: 'panel', action: 'menu-popup#enter' }, class: active_helper(controllers: ['audits'], item: 'cell button is-fullwidth', active: 'cell button is-fullwidth is-active')) do %>
     <span><%= t('auditor.panel.audits.index.title') %></span>
   <% end %>
 </div>
