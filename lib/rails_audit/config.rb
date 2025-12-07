@@ -1,13 +1,9 @@
-require 'active_support/configurable'
-
 module RailsAudit #:nodoc:
-  include ActiveSupport::Configurable
+  mattr_accessor :config, default: ActiveSupport::OrderedOptions.new
 
-  configure do |config|
-    config.default_except = [
-      'updated_at'
-    ]
-  end
+  config.default_except = [
+    'updated_at'
+  ]
 
 end
 
