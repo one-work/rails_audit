@@ -1,3 +1,7 @@
-<tr id="tr_<%= model.id %>" data-controller="show">
-  <%= yield %>
-</tr>
+<%=
+  tr_tag(
+    model,
+    { action: url_for(action: 'restore', id: model.id), icon: 'window-restore', title: t('.restore.title') },
+    icons: ['show', 'edit']
+  ) { yield }
+%>
