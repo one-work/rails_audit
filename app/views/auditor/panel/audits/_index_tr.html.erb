@@ -1,7 +1,11 @@
 <%=
   tr_tag(
     model,
-    { action: url_for(action: 'restore', id: model.id), icon: 'window-restore', title: t('.restore.title') },
+    {
+      action: url_for(action: 'restore', id: model.id),
+      icon: 'trash-undo',
+      title: t('.restore.title')
+    },
     icons: ['show', 'edit']
   ) { yield }
 %>

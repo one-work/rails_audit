@@ -9,6 +9,8 @@ zh:
       audits:
         index:
           title: 操作日志
+        restore:
+          title: 恢复
       verifications:
         new:
           title: 审核
