@@ -1,7 +1,10 @@
 zh:
   activerecord:
     enum:
-      verification:
+      auditor/audit:
+        type:
+          Auditor::DestroyedAudit: 删除操作
+      auditor/verification:
         confirmed:
           true: 已同意
           false: 未同意
