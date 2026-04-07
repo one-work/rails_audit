@@ -1,6 +1,10 @@
 zh:
   auditor:
     title: 操作日志
+    admin:
+      audits:
+        index:
+          title: 操作日志
     panel:
       title: 操作日志
       approvals:
