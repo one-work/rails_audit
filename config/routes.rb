@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+Rails.app.routes.draw do
   namespace :auditor, defaults: { business: 'auditor' } do
     scope ':audited_type/:audited_id', module: 'admin', defaults: { namespace: 'admin' } do
       resources :audits, only: [:index] do
