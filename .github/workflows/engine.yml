@@ -5,11 +5,7 @@ on:
       - main
 jobs:
   build:
-<<<<<<< HEAD:.github/workflows/git.yml
-    name: Git Collect
-=======
     name: Engine Collect
->>>>>>> 5e4d72d0a8f571688988858268362bc2b2891e22:.github/workflows/engine.yml
     environment: dev
     runs-on: ubuntu-latest
     steps:
